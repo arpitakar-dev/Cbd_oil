@@ -1,0 +1,35 @@
+/* Banner section */
+
+.banner_section {
+     /* background: url(../images/banner-1.jpg) no-repeat center left; */
+     background-size: cover;
+     padding: 6.5rem 0;
+     color: #ffffff;
+}
+
+.banner_section h6.pre_hdng {
+     color: #50E3C2;
+     text-transform: uppercase;
+     letter-spacing: 0.1rem;
+     font-weight: 300;
+     font-size: 1.1rem;
+}
+
+.banner_section h1 span {
+     color: #50E3C2;
+     display: block;
+}
+
+.banner_section p {
+     margin: 2rem 0;
+}
+
+.banner_section p span {
+     display: block;
+}
+
+@media only screen and (max-width:992px) {
+     .banner_section h1 span {
+          display: inline;
+     }
+}

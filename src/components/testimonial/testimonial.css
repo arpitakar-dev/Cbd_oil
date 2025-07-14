@@ -1,0 +1,99 @@
+/* Testimonial section */
+
+.testimonial_item {
+     padding: 1.75rem 2rem;
+     border-radius: 0.5rem;
+     border: 1px solid rgba(00, 00, 00, 0.1);
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     margin: 0.75rem;
+     background: #F9FFF3;
+     background: linear-gradient(180deg, rgba(249, 255, 243, 1) 0%, rgba(205, 248, 239, 0.52) 100%);
+}
+
+.testimonial_item-img {
+     max-width: 100%;
+     width: 80px;
+     height: 80px;
+     border-radius: 50%;
+     overflow: hidden;
+}
+
+.testimonial_item-img img.profile {
+     object-fit: cover;
+     height: 80px;
+}
+
+img.rate {
+     width: 110px;
+}
+
+.testimonial_item-txt h5 {
+     font-weight: 600;
+     margin: 0.5rem 0;
+     font-family: "Poppins", sans-serif;
+}
+
+.testimonial_item-txt p {
+     color: rgba(00, 00, 00, 0.6);
+}
+
+.testimonial_item-txt h5 i {
+     color: #21d14a;
+}
+
+.slick-prev,
+.slick-next {
+     background: #F9FFF3;
+     color: #50E3C2;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     box-shadow: 0 4px 4px rgba(00, 00, 00, 0.25);
+     z-index: 9;
+}
+
+.slick-prev:before,
+.slick-next:before {
+     color: #50E3C2;
+     font-size: 1.25rem;
+     color: #000000;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     display: inline-block;
+     font-family: bootstrap-icons !important;
+     font-style: normal;
+     font-weight: 400 !important;
+     font-variant: normal;
+     text-transform: none;
+     line-height: 1;
+     vertical-align: -.125em;
+     -webkit-font-smoothing: antialiased;
+}
+
+.slick-next:before {
+     content: '\F285';
+}
+
+.slick-prev:before {
+     content: '\F284';
+}
+
+.slick-prev:hover,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-next:focus {
+     background: #ffffff;
+}
+
+@media screen and (max-width:576px) {
+     .slick-prev {
+          left: 5px;
+     }
+
+     .slick-next {
+          right: 5px;
+     }
+
+}

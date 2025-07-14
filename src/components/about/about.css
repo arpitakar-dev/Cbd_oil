@@ -1,0 +1,153 @@
+
+.abt-img-box {
+     border-radius: 15px;
+     overflow: hidden;
+     /* height: 100%; */
+}
+
+.abt-img-box img {
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+}
+
+.abt-txt-box {
+     max-width: 620px;
+     width: 100%;
+}
+
+.organic_div {
+     margin-bottom: 1.5rem;
+     display: flex;
+     gap: 20px
+}
+
+.organic_div .icon-wrap {
+     width: 50px;
+     height: 50px;
+     background: #50E3C2;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 5px;
+     border-radius: 50%;
+     flex-shrink: 0;
+}
+
+.organic_div .icon-wrap img {
+     width: 30px;
+}
+
+.organic_div .txt-block h4 {
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+     text-transform: uppercase;
+     font-size: 1.2rem;
+     margin-bottom: 0.3rem;
+}
+
+.organic_div .txt-block p {
+     font-weight: 400;
+}
+
+.about-leaf {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     width: 150px;
+}
+
+@media only screen and (max-width:992px) {
+     .about-leaf {
+          width: 142px;
+          opacity: 0.6;
+          bottom: -20px;
+     }
+}
+
+@media only screen and (max-width:767px) {
+     .abt-img-box {
+          max-width: 500px;
+          margin: 0 auto 2.5rem;
+     }
+
+     .abt-img-box img {
+          object-fit: cover;
+          aspect-ratio: 3 / 3;
+     }
+}
+
+/* Premium dropper -section */
+.premium-txt-box {
+     max-width: 100%;
+}
+
+.dropper-row {
+     display: flex;
+     gap: 10px;
+     justify-content: space-between;
+     margin-bottom: 2rem;
+}
+
+.dropper-item {
+     border-radius: 15px;
+     overflow: hidden;
+     position: relative;
+     color: #ffffff;
+     width: 32%;
+     height: 200px;
+     background: #34f6b8;
+     text-align: center;
+}
+
+.dropper-item::after {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 0;
+     top: 0;
+     background: #072602;
+     background: linear-gradient(0deg, rgba(7, 38, 2, 1) 0%, rgba(110, 126, 107, 0.52) 33%, rgba(255, 255, 255, 0) 100%);
+     transition: background 0.4s;
+}
+
+.dropper-item:hover::after {
+     background: none;
+}
+
+.dropper-item img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     object-position: center;
+}
+
+.dropper-item h4 {
+     position: absolute;
+     font-size: 1rem;
+     bottom: 1rem;
+     width: 100%;
+     left: 50%;
+     transform: translateX(-50%);
+     z-index: 9;
+     font-family: "Poppins", sans-serif;
+     font-weight: 600;
+}
+
+@media only screen and(max-width:992px) {
+     .dropper-item {
+          height: 150px;
+     }
+
+     .dropper-item h4 {
+          width: 90%;
+
+     }
+}
+
+@media only screen and(max-width:992px) {
+     .dropper-item {
+          height: 200px;
+     }
+}

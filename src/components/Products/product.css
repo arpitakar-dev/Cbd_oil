@@ -1,0 +1,112 @@
+/* Product section */
+.product__item {
+     border-bottom-left-radius: 0.4rem;
+     border-bottom-right-radius: 0.4rem;
+     overflow: hidden;
+     padding: 0.5rem;
+}
+
+.product__item-img {
+     display: block;
+     transition: all 0.4s ease-in-out;
+     height: 280px;
+     overflow: hidden;
+     border-radius: 0.6rem;
+}
+
+.prod_name {
+     display: block;
+     font-weight: 500;
+     font-size: 1.2rem;
+}
+
+.prod_wight {
+     color: #616161;
+     font-size: 1rem;
+     margin: 0.3rem 0;
+}
+
+.prod_price {
+     font-size: 1.375rem;
+     line-height: 1;
+     font-weight: 500;
+     color: #10a684;
+     margin: 0.7rem 0;
+}
+
+.pro_img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+.product__item-details {
+     padding: 1rem
+}
+
+.addtocart_btn {
+     outline: none;
+     background: #50E3C2;
+     color: #191919;
+     border-radius: 50vmax;
+     padding: 0.5rem 1.5rem;
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+     border: 1px solid transparent;
+     transition: all 0.2s;
+     font-weight: 300;
+     font-size: 0.9rem;
+     width: 100%;
+}
+
+.addtocart_btn:hover {
+     box-shadow: 0 4px 15px -4px rgba(00, 00, 00, 0.25);
+     transform: translateY(-0.25rem);
+}
+
+@media only screen and (max-width: 1400px) {
+
+     .prod_det,
+     .addtocart_btn {
+          width: 100%;
+     }
+}
+
+@media only screen and (max-width:767px) {
+     /* .product-item {
+          margin-bottom: 1rem;
+     } */
+
+     .product__item-img {
+          height: auto;
+     }
+}
+
+@media only screen and (max-width: 680px) {
+
+     .product__item-details {
+          padding: 0.6rem;
+     }
+
+     .addtocart_btn {
+          padding: 0.4rem 1rem;
+          font-size: 0.8rem;
+     }
+
+     .prod_name {
+          font-size: 0.9rem;
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+     }
+     .prod_wight{
+        font-size: 0.8rem;  
+     }
+
+     .prod_price {
+          font-size: 1rem;
+          margin: 0.5rem 0;
+     }
+}
