@@ -1,16 +1,16 @@
 import { createContext, useEffect, useState } from "react";
 
 export const CartContext = createContext({
-     cartItems: [],
-     addToCart: () => { },
-     cartCount: () => { },
-     updateQuantity: () => { },
-     removeFromCart: () => { },
-     cartTotal: () => { },
-     clearCart: () => {},
-     total: 0,
-     handlingCharge: 0,
-     grandTotal: 0,
+     // cartItems: [],
+     // addToCart: () => { },
+     // cartCount: () => { },
+     // updateQuantity: () => { },
+     // removeFromCart: () => { },
+     // cartTotal: () => { },
+     // clearCart: () => {},
+     // total: 0,
+     // handlingCharge: 0,
+     // grandTotal: 0,
 })
 
 export const ProductProvider = ({ children }) => {
@@ -45,8 +45,6 @@ export const ProductProvider = ({ children }) => {
                }
           })
      }
-
-     //Get single product details
 
      //Total Cart cout
      const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
@@ -89,8 +87,6 @@ export const ProductProvider = ({ children }) => {
      };
 
      //openmenu body overflow
-
-     
 
      return <CartContext.Provider value={{
           cartItems,

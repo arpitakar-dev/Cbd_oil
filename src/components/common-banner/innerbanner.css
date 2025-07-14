@@ -5,5 +5,11 @@
 
 .inner-banner h1{
      color: #343434;
-     padding: 4rem 0;
+     padding: 6rem 0;
+}
+
+@media screen and (max-width:767px){
+     .inner-banner h1{
+     padding: 3rem 0;
+}
 }

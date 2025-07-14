@@ -25,21 +25,21 @@ export const ShippingForm = () => {
 
           let newErrors = {};
 
-          if (!data.name.trim()) newErrors.name = "Name is required";
-          if (!data.phonenumber.trim()) {
+          if (!(data.name || "").trim()) newErrors.name = "Name is required";
+          if (!(data.phonenumber || "").trim()) {
                newErrors.phonenumber = "Phone number is required";
           } else if (!/^[0-9]{10}$/.test(data.phonenumber)) {
                newErrors.phonenumber = "Enter 10-digit valid phone number";
           }
-          if (!data.housename.trim()) newErrors.housename = "House name is required";
-          if (!data.street.trim()) newErrors.street = "Street name is required";
-          if (!data.pincode.trim()) {
+          if (!(data.housename || "").trim()) newErrors.housename = "House name is required";
+          if (!(data.street || "").trim()) newErrors.street = "Street name is required";
+          if (!(data.pincode || "").trim()) {
                newErrors.pincode = "Pincode is required";
           } else if (!/^[0-9]{6}$/.test(data.pincode)) {
                newErrors.pincode = "Enter 6-digit valid pincode";
           }
-          if (!data.state.trim()) newErrors.state = "State is required";
-          if (!data.payby) newErrors.payby = "Select a payment method";
+          if (!(data.state || "").trim()) newErrors.state = "State is required";
+          if (!(data.payby || "")) newErrors.payby = "Select a payment method";
 
           setErrors(newErrors);
 

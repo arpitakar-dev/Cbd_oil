@@ -95,7 +95,7 @@
      }
 
      .prod_name {
-          font-size: 0.9rem;
+          font-size: 1rem;
           max-width: 100%;
           overflow: hidden;
           text-overflow: ellipsis;
