@@ -86,7 +86,12 @@ export const ProductProvider = ({ children }) => {
           localStorage.removeItem("cartItems");
      };
 
-     //openmenu body overflow
+    //goto product details page
+     //     const setobjProductDetails = (products, itemID) => {
+     //      const productDetails = products.find(prodItem => prodItem.id === itemID)
+     //      localStorage.setItem('productDetailsObj', JSON.stringify(productDetails))
+     //      console.log(productDetails)
+     // }
 
      return <CartContext.Provider value={{
           cartItems,
@@ -97,7 +102,8 @@ export const ProductProvider = ({ children }) => {
           cartTotal,
           handlefee,
           grandTotal,
-          clearCart
+          clearCart,
+          // setobjProductDetails
      }}>
           {children}
      </CartContext.Provider>
