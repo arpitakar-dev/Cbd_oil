@@ -24,7 +24,7 @@ export const Product = ({ item }) => {
                          <img src={item_image} alt="Product image" className="pro_img" />
                     </Link>
                     <div className="product__item-details">
-                         <Link to="product-details.html" className="prod_name">
+                         <Link to="/productdetails" className="prod_name" onClick ={()=>setobjProductDetails(id)}>
                               {item_name}
                          </Link>
 

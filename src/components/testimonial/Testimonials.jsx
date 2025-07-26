@@ -23,7 +23,7 @@ export const Testimonials = () => {
           id: 2,
           name: 'Srij H',
           image: testimonialImg2,
-          text: "There Products are good, and they gibt you a really good support and advice.. Best wishes for this Brand I come always back."
+          text: "There Products are good, and they gibt you a really good support and advice.. Truly satisfied."
      },
      {
           id: 3,
@@ -47,7 +47,7 @@ export const Testimonials = () => {
           id: 6,
           name: 'Taltro J',
           image: testimonialImg6,
-          text: "I've been using CBD oil for a month now. It significantly reduced my anxiety and improved my focus without making me feel drowsy or high."
+          text: "CBD oil reduced my anxiety and improved focus without causing drowsiness or a high feeling."
      }]
 
 
@@ -55,7 +55,7 @@ export const Testimonials = () => {
           dots: false,
           infinite: true,
           arrow: true,
-          autoplay: true,
+          autoplay: false,
           autoplaySpeed: 1500,
           slidesToShow: 3,
           slidesToScroll: 1,

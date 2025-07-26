@@ -46,11 +46,11 @@ export const Cart = () => {
                               </div>*/}
                               <div className="price-item">
                                    <span className="price-item-tag">Handle Fee</span>
-                                   <span className="price-item-value">$ {handlefee}</span>
+                                   <span className="price-item-value">₹ {handlefee}</span>
                               </div>
                               <div className="price-footer">
                                    <span className="price-item-tag">Total Amount</span>
-                                   <span className="price-item-value">$ {grandTotal}</span>
+                                   <span className="price-item-value">₹ {grandTotal}</span>
                               </div>
                          </div>
                          <Link to={`${cartTotal > 0 ? '/checkout' : '/shop'}`} className={`common_btn btn-place-order ${cartTotal > 0 ? '' : 'disable'}`}>
