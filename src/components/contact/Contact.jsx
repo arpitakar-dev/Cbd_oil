@@ -35,7 +35,7 @@ export const Contact = () => {
 
      return (
           <>
-               <InnerBanner heading="Contact"></InnerBanner>
+               <InnerBanner heading="Contact US"></InnerBanner>
                <section className="cmn_gap">
                     <div className="container-xl">
                          <div className="row justify-content-center">

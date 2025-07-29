@@ -92,7 +92,7 @@ export const Footer = () => {
                          </div>
                          <hr />
                          <div className="row copyright_sec text-center">
-                              <p>cannavedic © 2025, All Rights Reserved.</p>
+                              <p>Cannavedic © 2025, All Rights Reserved.</p>
                          </div>
                     </div>
                </footer>
