@@ -18,10 +18,11 @@ import { ThankYou } from './components/thank-you/ThankYou.jsx';
 import { Faqs } from './components/faqs/Faqs.jsx'
 import { AboutPage } from './components/about/AboutPage.jsx'
 import { Contact } from './components/contact/Contact.jsx'
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
-    <Route path='/' element={<Layout />}>
+    <Route path='/' element={<Layout />}> 
       <Route path='' element={<Home />}></Route>
       <Route path='cart' element={<Cart />}></Route>
       <Route path='shop' element={<Shop />}></Route>

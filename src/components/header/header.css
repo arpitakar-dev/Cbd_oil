@@ -221,6 +221,10 @@ span.cartcount {
      font-size: 1.25rem;
 }
 
+.main_nav_list-item a.menu_link.active{
+     color: #50E3C2;
+}
+
 @media only screen and (max-width: 1385px) {
      .main_nav_list-item {
           margin: 0 0.25rem;

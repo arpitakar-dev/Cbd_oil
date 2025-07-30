@@ -59,22 +59,27 @@ function Header() {
             <div className={`nav_bar_collapse ${isMenuOpen ? 'active' : ''}`}>
               <ul className="main_nav_list">
                 <li className="main_nav_list-item">
-                  <NavLink to="/shop" className="menu_link">
+                  <NavLink to="/" className={({isActive})=>`menu_link ${isActive ? 'active' : ''}`}>         
+                    Home
+                  </NavLink>
+                </li>
+                <li className="main_nav_list-item">
+                  <NavLink to="/shop" className={({isActive})=>`menu_link ${isActive ? 'active' : ''}`}>
                     Shop
                   </NavLink>
                 </li>
                 <li className="main_nav_list-item">
-                  <NavLink to="/aboutpage" className="menu_link">
+                  <NavLink to="/aboutpage" className={({isActive})=>`menu_link ${isActive ? 'active' : ''}`}>
                     About
                   </NavLink>
                 </li>
                 <li className="main_nav_list-item">
-                  <NavLink to="/faqs" className="menu_link">
+                  <NavLink to="/faqs" className={({isActive})=>`menu_link ${isActive ? 'active' : ''}`}>
                     FAQs
                   </NavLink>
                 </li>
                 <li className="main_nav_list-item">
-                  <NavLink to="/contact" className="menu_link">
+                  <NavLink to="/contact" className={({isActive})=>`menu_link ${isActive ? 'active' : ''}`}>
                     Contact
                   </NavLink>
                 </li>
