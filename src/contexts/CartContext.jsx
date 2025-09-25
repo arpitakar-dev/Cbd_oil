@@ -83,7 +83,7 @@ export const ProductProvider = ({ children }) => {
 
      const clearCart = () => {
           setCartItems([]);
-          localStorage.removeItem("cartItems");
++          localStorage.removeItem("cartItems");
      };
 
     //goto product details page

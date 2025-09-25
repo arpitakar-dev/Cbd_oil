@@ -4,24 +4,12 @@ import bannerBg from '../../assets/images/banner-1.jpg'
 import { Link } from "react-router-dom"
 import { ProductList } from "../Products/ProductList"
 import { Testimonials } from "../testimonial/Testimonials"
-import { useRef } from "react"
-import { useNavigate } from "react-router-dom"
+import {useHandleScroller} from '../../hooks/useHandelScroller'
+
 
 export const Home = () => {
 
-     const targetSec = useRef(null)
-     const navigate = useNavigate();
-
-     const handleScroll = () => {
-          if (location.pathname === '/') {
-               if (targetSec.current) {
-                    targetSec.current?.scrollIntoView({ behavior: 'smooth' });
-               }
-          }
-          else {
-               navigate('/shop')
-          }
-     };
+    const {handleScroll, targetSec} = useHandleScroller()
 
      return (
           <>
